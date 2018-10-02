@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+	<link href="https://fonts.googleapis.com/css?family=Karla" rel="stylesheet">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<title>page-login</title>
+  <style>
+    .bg-gradasi1{
+      background: #a73737;  /* fallback for old browsers */
+      background: -webkit-linear-gradient(to right, #7a2828, #a73737);  /* Chrome 10-25, Safari 5.1-6 */
+      background: linear-gradient(to right, #7a2828, #a73737); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    }
+    button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    background-color:#606060;
+    margin-top:20px;
+    }
+
+    button:hover {
+    opacity: 0.8;
+    }
+    .imgcontainer {
+    text-align: center;
+    margin: 24px 0 12px 0;
+    position: relative;
+    }
+
+    img.avatar {
+        width: 40%;
+        border-radius: 95%;
+    }
+
+
+
+  </style>
+</head>
+<body class="bg-gradasi1">
+  <div class="container">
+    <div class="row">
+        <div class="col-sm-6 col-md-4 col-md-offset-4" style="margin-top:100px;">
+          <div class="imgcontainer">
+          <img src="img\pin2.png" alt="Avatar" class="avatar">
+          </div>
+
+                <form class="form-signin" style="color:#ffff;">
+                    <label for="uname"><b>Username</b></label>
+                    <input type="text" class="form-control" placeholder="Enter Username" required autofocus>
+                    <label for="psw" style="margin-top:15px"><b>Password</b></label>
+                    <input type="password" class="form-control" placeholder="Enter Password" required>
+                    <button class="btn" type="submit"style="font-size:18px;" >Login</button>
+                </form>
+        </div>
+    </div>
+</div>
+</body>
+</html>
