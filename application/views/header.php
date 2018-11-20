@@ -52,7 +52,7 @@
               <ul id="exampledropdownDropdown" class="collapse list-unstyled ">
                  <li><a href="<?php echo site_url('cinv'); ?>">Inventaris</a></li>
                  <li><a href="<?php echo site_url('cbrg'); ?>">Barang</a></li>
-                <li><a href="tanah_cs.html">Tanah</a></li>
+                <li><a href="<?php echo site_url('ctnh'); ?>">Tanah</a></li>
               </ul>
             </li>
             <li><a href="aset_cs.html"> <i class="icon-grid"></i>Aset</a></li>

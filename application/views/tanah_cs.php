@@ -16,8 +16,8 @@
           <table class="table">
             <thead>
               <tr>
-                <th>ID Barang</th>
-                <th>Jumlah</th>
+                <th>ID Tanah</th>
+                <th>Luas</th>
                 <th>ID Inventaris</th>
                 <th>Aksi</th>
               </tr>
@@ -29,8 +29,8 @@
                 <td><?php echo $value['luas'];?></td>
                 <td><?php echo $value['idinventaris'];?></td>
                 <td>
-                    <a class="btn btn-md btn-warning fas fa-edit" href="<?php echo site_url('cbrg/edit/'.$value['idtanah']);?>"></a>
-                    <a class="btn btn-md btn-danger fas fa-trash-alt" href="<?php echo site_url('cbrg/delete/'.$value['idtanah']);?>" onclick="return confirm('Are you sure?')"></a>
+                    <a class="btn btn-md btn-warning fas fa-edit" href="<?php echo site_url('ctnh/edit/'.$value['idtanah']);?>"></a>
+                    <a class="btn btn-md btn-danger fas fa-trash-alt" href="<?php echo site_url('ctnh/delete/'.$value['idtanah']);?>" onclick="return confirm('Are you sure?')"></a>
                 </td>
               </tr>
                 <?php } ?>

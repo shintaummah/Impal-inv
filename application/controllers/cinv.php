@@ -17,9 +17,10 @@ Class cinv extends CI_Controller
     }
     public function add()
     {
-        $header['url']="addinv";
+        $header['url']="add";
         $this->load->view('header', $header);
-        $this->load->view('addinv');
+        $this->load->view('add');
+        $this->load->view('footer');
     }
     public function addProses(){
         $dinv = array(
