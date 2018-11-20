@@ -16,21 +16,19 @@
           <table class="table">
             <thead>
               <tr>
-                <th>ID Tanah</th>
-                <th>Luas</th>
                 <th>ID Inventaris</th>
+                <th>ID Milik</th>
                 <th>Aksi</th>
               </tr>
             </thead>
             <tbody>
-                <?php foreach ($tb_tanah as $key => $value) { ?>
+                <?php foreach ($tb_milik as $key => $value) { ?>
               <tr>
-                <td><?php echo $value['idtanah'];?></td>
-                <td><?php echo $value['luas'];?></td>
                 <td><?php echo $value['idinventaris'];?></td>
+                <td><?php echo $value['idmilik'];?></td>
                 <td>
-                    <a class="btn btn-md btn-warning fas fa-edit" href="<?php echo site_url('ctnh/edit/'.$value['idtanah']);?>"></a>
-                    <a class="btn btn-md btn-danger fas fa-trash-alt" href="<?php echo site_url('ctnh/delete/'.$value['idtanah']);?>" onclick="return confirm('Are you sure?')"></a>
+                    <a class="btn btn-md btn-warning fas fa-edit" href="<?php echo site_url('cmilik/edit/'.$value['idinventaris']);?>"></a>
+                    <a class="btn btn-md btn-danger fas fa-trash-alt" href="<?php echo site_url('cmilik/delete/'.$value['idinventaris']);?>" onclick="return confirm('Are you sure?')"></a>
                 </td>
               </tr>
                 <?php } ?>

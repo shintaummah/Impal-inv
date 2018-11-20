@@ -55,8 +55,8 @@
                 <li><a href="<?php echo site_url('ctnh'); ?>">Tanah</a></li>
               </ul>
             </li>
-            <li><a href="aset_cs.html"> <i class="icon-grid"></i>Aset</a></li>
-            <li><a href="milik_cs.html"> <i class="icon-grid"></i>Milik</a></li>
+            <li><a href="<?php echo site_url('casset'); ?>"> <i class="icon-grid"></i>Aset</a></li>
+            <li><a href="<?php echo site_url('cmilik'); ?>"> <i class="icon-grid"></i>Milik</a></li>
           </ul>
         </div>
       </div>

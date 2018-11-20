@@ -16,21 +16,19 @@
           <table class="table">
             <thead>
               <tr>
-                <th>ID Tanah</th>
-                <th>Luas</th>
-                <th>ID Inventaris</th>
+                <th>ID Asset</th>
+                <th>Nama</th>
                 <th>Aksi</th>
               </tr>
             </thead>
             <tbody>
-                <?php foreach ($tb_tanah as $key => $value) { ?>
+                <?php foreach ($tb_asset as $key => $value) { ?>
               <tr>
-                <td><?php echo $value['idtanah'];?></td>
-                <td><?php echo $value['luas'];?></td>
-                <td><?php echo $value['idinventaris'];?></td>
+                <td><?php echo $value['idasset'];?></td>
+                <td><?php echo $value['nama'];?></td>
                 <td>
-                    <a class="btn btn-md btn-warning fas fa-edit" href="<?php echo site_url('ctnh/edit/'.$value['idtanah']);?>"></a>
-                    <a class="btn btn-md btn-danger fas fa-trash-alt" href="<?php echo site_url('ctnh/delete/'.$value['idtanah']);?>" onclick="return confirm('Are you sure?')"></a>
+                    <a class="btn btn-md btn-warning fas fa-edit" href="<?php echo site_url('cbrg/edit/'.$value['idbarang']);?>"></a>
+                    <a class="btn btn-md btn-danger fas fa-trash-alt" href="<?php echo site_url('cbrg/delete/'.$value['idbarang']);?>" onclick="return confirm('Are you sure?')"></a>
                 </td>
               </tr>
                 <?php } ?>

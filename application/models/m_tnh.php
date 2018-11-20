@@ -10,7 +10,7 @@ Class m_tnh extends CI_Model
 	{
 		return $this->db->insert('tb_tanah',$data);
 	}
-	public function getanah($id)
+	public function gettanah($id)
 	{
 		$this->db->where('idtanah',$id);
 		$query = $this->db->get('tb_tanah');
