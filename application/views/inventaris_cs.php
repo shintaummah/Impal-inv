@@ -1,5 +1,7 @@
           <!-- Page Header-->
-          <header>
+
+          <section>
+            <div class="container-fluid"><header>
            <div class="card-header d-flex align-items-center">
                   <h4>Inventaris</h4>
                 </div>

@@ -17,10 +17,10 @@ Class cinv extends CI_Controller
     }
     public function add()
     {
-        $header['url']="add";
-        //$this->load->view('header', $header);
-        $this->load->view('add');
-      //  $this->load->view('footer');
+        $header['url']="addinv_cs";
+        $this->load->view('header', $header);
+        $this->load->view('addinv_cs');
+        $this->load->view('footer');
     }
     public function addProses(){
         $dinv = array(
@@ -40,17 +40,17 @@ Class cinv extends CI_Controller
     }
    public function edit($id)
    {
-     $header['url']="editinv";
+     $header['url']="updateinv_cs";
      $data['inventaris'] = $this->m_inv->getInventaris($id);
      $this->load->view('header', $header);
-     $this->load->view('editinv',$data);
+     $this->load->view('updateinv_cs',$data);
      $this->load->view('footer');
    }
    public function updateinv($id){
     $dinv = array(
          'idinventaris' => $this->input->post('idinventaris'),
          'nama_inv' => $this->input->post('nama_inv'),
-         'kondisi' => $this->input->post('kondisi$id'),
+         'kondisi' => $this->input->post('kondisi'),
          'idpegawai' => $this->input->post('idpegawai')
      );
      $this->m_inv->update($id,$dinv);
