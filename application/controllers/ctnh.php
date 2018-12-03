@@ -35,6 +35,25 @@ Class ctnh extends CI_Controller
         );
         $this->m_tnh->insert($dtnh);
         $this->session->set_flashdata('msg','<p class="alert alert-success">Input Success</p>');
-        redirect('cinv');
+        redirect('ctnh');
     }
+    public function edit($id)
+    {
+      $header['url']="updatetanah_cs";
+      $data['tanah'] = $this->m_tnh->gettanah($id);
+      $this->load->view('header', $header);
+      $this->load->view('updatetanah_cs',$data);
+      $this->load->view('footer');
+    }
+    public function updatetanah($id){
+      $dtnh = array(
+          'idtanah' => $this->input->post('idtanah'),
+          'luas' => $this->input->post('luas'),
+          //'idinventaris' => $this->input->post('idinventaris')
+      );
+      $this->m_tnh->update($id,$dtnh);
+      $this->session->set_flashdata('msg','<p class="alert alert-success">Input Success</p>');
+      redirect('ctnh');
+    }
+
 }

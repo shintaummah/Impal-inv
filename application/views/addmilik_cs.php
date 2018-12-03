@@ -5,29 +5,22 @@
                <br>
               <div class="card">
                 <div class="card-header d-flex align-items-center">
-                  <h4>Form Input Data Tanah</h4>
+                  <h4>Form Input Data Inventaris</h4>
                 </div>
                 <div class="card-body">
-                  <form method="POST" action="<?php echo site_url('ctnh/addProses');?>">
-                  <form class="form-horizontal" method="POST" action="<?php echo site_url('ctnh/addProses');?>">
-                    <div class="form-group row">
-                      <label class="col-sm-2 form-control-label">Id Tanah</label>
-                      <div class="col-sm-10">
-                        <input type="text" class="form-control" name="idtanah" placeholder="Enter Id Tanah">
-                      </div>
-                    </div>
-                    <div class="line"></div>
-                    <div class="form-group row">
-                      <label class="col-sm-2 form-control-label">Luas</label>
-                      <div class="col-sm-10">
-                          <input type="text" class="form-control" name="luas" placeholder="">
-                      </div>
-                    </div>
+                  <form method="POST" action="<?php echo site_url('cmilik/addProses');?>">
+                  <form class="form-horizontal" method="POST" action="<?php echo site_url('cmilik/addProses');?>">
                     <div class="line"></div>
                     <div class="form-group row">
                             <label class="col-sm-2 form-control-label">Id Inventaris</label>
                             <div class="col-sm-10">
                                 <input type="text" class="form-control" name="idinventaris" placeholder="">
+                            </div>
+                    </div>
+                    <div class="form-group row">
+                            <label class="col-sm-2 form-control-label">Id Asset</label>
+                            <div class="col-sm-10">
+                                <input type="text" class="form-control" name="idasset" placeholder="">
                             </div>
                     </div>
                     	<button type="submit" class="btn btn-primary">Submit</button>
