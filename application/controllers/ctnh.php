@@ -20,4 +20,21 @@ Class ctnh extends CI_Controller
         $this->session->set_flashdata('msg','<p class="alert alert-success">Delete Success</p>');
         redirect('ctnh');
     }
+    public function add()
+    {
+        $header['url']="addtanah_cs";
+        $this->load->view('header', $header);
+        $this->load->view('addtanah_cs');
+        $this->load->view('footer');
+    }
+    public function addProses(){
+        $dtnh = array(
+            'idtanah' => $this->input->post('idtanah'),
+            'luas' => $this->input->post('luas'),
+            'idinventaris' => $this->input->post('idinventaris')
+        );
+        $this->m_tnh->insert($dtnh);
+        $this->session->set_flashdata('msg','<p class="alert alert-success">Input Success</p>');
+        redirect('cinv');
+    }
 }

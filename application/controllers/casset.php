@@ -18,6 +18,22 @@ Class casset extends CI_Controller
     public function delete($id){
         $this->m_asset->delete($id);
         $this->session->set_flashdata('msg','<p class="alert alert-success">Delete Success</p>');
-        redirect('ctnh');
+        redirect('casset');
+    }
+    public function add()
+    {
+        $header['url']="addasset_cs";
+        $this->load->view('header', $header);
+        $this->load->view('addasset_cs');
+        $this->load->view('footer');
+    }
+    public function addProses(){
+        $dasset = array(
+            'idasset' => $this->input->post('idasset'),
+            'nama' => $this->input->post('nama'),
+        );
+        $this->m_asset->insert($dasset);
+        $this->session->set_flashdata('msg','<p class="alert alert-success">Input Success</p>');
+        redirect('casset');
     }
 }

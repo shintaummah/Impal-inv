@@ -6,7 +6,7 @@
                   <h4>Inventaris</h4>
                 </div>
           </header>
-          	<a type="button" class="btn btn-primary ?php if($url=='add'){echo 'actived';}?>" href="<?php echo site_url('cinv/add'); ?>">Add Peserta</a>
+          	<a type="button" class="btn btn-primary ?php if($url=='add'){echo 'actived';}?>" href="<?php echo site_url('cinv/add'); ?>">Add Inventaris</a>
           <div class="row">
               <!-- <a class="btn btn-md btn-warning fas fa-edit" href="<?php echo site_url('cinv/add/'.$value['idinventaris']);?>"></a> -->
             <div class="col-lg-10">

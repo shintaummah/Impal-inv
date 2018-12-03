@@ -51,7 +51,7 @@ Class cinv extends CI_Controller
          'idinventaris' => $this->input->post('idinventaris'),
          'nama_inv' => $this->input->post('nama_inv'),
          'kondisi' => $this->input->post('kondisi'),
-         'idpegawai' => $this->input->post('idpegawai')
+         #'idpegawai' => $this->input->post('idpegawai')
      );
      $this->m_inv->update($id,$dinv);
      $this->session->set_flashdata('msg','<p class="alert alert-success">Update Success</p>');
