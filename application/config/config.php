@@ -23,7 +23,9 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 | a PHP script and you can easily do that on your own.
 |
 */
-$config['base_url'] = 'https://localhost/Impal-inv/';
+$http = 'http' . ((isset($_SERVER['HTTPS']) && $_SERVER['HTTPS'] == 'on') ? 's' : '') . '://';
+$newurl = str_replace("index.php","", $_SERVER['SCRIPT_NAME']);
+$config['base_url']    = "$http" . $_SERVER['SERVER_NAME'] . "" . $newurl;
 
 /*
 |--------------------------------------------------------------------------
@@ -52,7 +54,7 @@ $config['index_page'] = 'index.php';
 |
 | WARNING: If you set this to 'PATH_INFO', URIs will always be URL-decoded!
 */
-$config['uri_protocol']	= 'REQUEST_URI';
+$config['uri_protocol']	= 'AUTO';
 
 /*
 |--------------------------------------------------------------------------
@@ -432,7 +434,7 @@ $config['standardize_newlines'] = FALSE;
 |          for backwards compatibility purposes!
 |
 */
-$config['global_xss_filtering'] = TRUE;
+$config['global_xss_filtering'] = FALSE;
 
 /*
 |--------------------------------------------------------------------------

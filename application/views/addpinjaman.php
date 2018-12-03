@@ -5,7 +5,7 @@
                <br>
               <div class="card">
                 <div class="card-header d-flex align-items-center">
-                  <h4>Form Input Data Inventaris</h4>
+                  <h4>Form Input Data Pinjaman</h4>
                 </div>
                 <div class="card-body">
                   <form method="POST" action="<?php echo site_url('cpinjaman/addProses');?>">

@@ -5,7 +5,7 @@
                <br>
               <div class="card">
                 <div class="card-header d-flex align-items-center">
-                  <h4>Form Input Data Tanah</h4>
+                  <h4>Form Input Data Pinjaman</h4>
                 </div>
                 <div class="card-body">
                   <form class="form-horizontal" method="POST" action="<?php echo site_url('cpinjaman/updatepinjaman/'.$pinjaman['idpinjaman']);?>">

@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Nov 15, 2018 at 04:30 PM
+-- Generation Time: Dec 03, 2018 at 05:49 PM
 -- Server version: 10.1.34-MariaDB
 -- PHP Version: 5.6.37
 
@@ -75,6 +75,26 @@ INSERT INTO `tb_barang` (`idbarang`, `jumlah`, `idinventaris`) VALUES
 -- --------------------------------------------------------
 
 --
+-- Table structure for table `tb_logistik`
+--
+
+CREATE TABLE `tb_logistik` (
+  `id_logistik` int(11) NOT NULL,
+  `nama` varchar(30) NOT NULL,
+  `username` varchar(20) NOT NULL,
+  `password` varchar(20) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+--
+-- Dumping data for table `tb_logistik`
+--
+
+INSERT INTO `tb_logistik` (`id_logistik`, `nama`, `username`, `password`) VALUES
+(1, 'admin', 'admin', 'admin');
+
+-- --------------------------------------------------------
+
+--
 -- Table structure for table `tb_milik`
 --
 
@@ -118,6 +138,13 @@ CREATE TABLE `tb_peminjam` (
   `username` varchar(30) NOT NULL,
   `password` varchar(20) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+--
+-- Dumping data for table `tb_peminjam`
+--
+
+INSERT INTO `tb_peminjam` (`nim`, `nama`, `username`, `password`) VALUES
+('1', 'admin', 'admin', 'admin');
 
 -- --------------------------------------------------------
 
@@ -170,6 +197,12 @@ ALTER TABLE `tb_barang`
   ADD KEY `fk1_barang` (`idinventaris`);
 
 --
+-- Indexes for table `tb_logistik`
+--
+ALTER TABLE `tb_logistik`
+  ADD PRIMARY KEY (`id_logistik`);
+
+--
 -- Indexes for table `tb_milik`
 --
 ALTER TABLE `tb_milik`
@@ -202,6 +235,16 @@ ALTER TABLE `tb_pinjaman`
 ALTER TABLE `tb_tanah`
   ADD PRIMARY KEY (`idtanah`),
   ADD KEY `fk1_tanah` (`idinventaris`);
+
+--
+-- AUTO_INCREMENT for dumped tables
+--
+
+--
+-- AUTO_INCREMENT for table `tb_logistik`
+--
+ALTER TABLE `tb_logistik`
+  MODIFY `id_logistik` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
 
 --
 -- Constraints for dumped tables

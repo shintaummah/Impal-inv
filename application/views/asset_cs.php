@@ -6,12 +6,12 @@
         <h4>Inventaris</h4>
       </div>
 </header>
-<a type="button" class="btn btn-primary ?php if($url=='add'){echo 'actived';}?>" href="<?php echo site_url('casset/add'); ?>">Add Barang</a>
+<a type="button" class="btn btn-primary ?php if($url=='add'){echo 'actived';}?>" href="<?php echo site_url('casset/add'); ?>">Add Asset</a>
 <div class="row">
   <div class="col-lg-10">
     <div class="card">
       <div class="card-header">
-        <h4>Tabel Inventaris Barang</h4>
+        <h4>Tabel Asset</h4>
       </div>
       <div class="card-body">
         <div class="table-responsive">
